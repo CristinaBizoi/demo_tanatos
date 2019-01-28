@@ -369,16 +369,17 @@ section>a{
     text-align: center;
 }
 .angajat:hover .angajatimagine img{
-    -webkit-transform: scale(1.1);
-	transform: scale(1.1);
+    /* -webkit-transform: scale(1.1);
+	transform: scale(1.1); */
 }
 .angajat:hover .angajatimagine img::after{
     content:"";
     background-color: orange;
-    height: 30px;
-    width: 100%;
+    /* height: 30px;
+    width: 100%; */
 
 }
+/*
 .angajat:hover .angajatimagine{
     width: 100%;
     position: relative;
@@ -386,6 +387,7 @@ section>a{
     overflow: hidden;
     height: 330px;
 }
+*/
 .section-6{
     background-image: url("../imgs/formularbackground.gif");
     background-size: cover;
@@ -461,6 +463,9 @@ footer{
     }
     .col-20{
         width: 45%;
+    }
+    .col-25{
+        width: 48%;
     }
  }
 @media only screen and (max-width: 599px) {

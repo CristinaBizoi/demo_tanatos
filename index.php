@@ -167,7 +167,7 @@
                             
                             <img src="./public/imgs/angajat1.gif">
                         </div>
-                            <h5>Harvey Rube</h5> 
+                            <h4>Harvey Rube</h4> 
                             <div class="retele"><i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-google-plus"></i></div>
                             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odi</p>
                         
@@ -176,7 +176,7 @@
                         <div  class="angajatimagine">
                             <img src="./public/imgs/angajat1.gif" class="zoom">
                         </div>
-                            <h5>Harvey Rube</h5> 
+                            <h4>Harvey Rube</h4> 
                             <div class="retele"><i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-google-plus"></i></div>
                             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odi</p>
                     </div>
@@ -184,7 +184,7 @@
                         <div  class="angajatimagine">
                             <img src="./public/imgs/angajat1.gif">
                         </div>
-                            <h5>Harvey Rube</h5> 
+                            <h4>Harvey Rube</h4> 
                             <div class="retele"><i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-google-plus"></i></div>
                             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odi</p>
                     </div>
