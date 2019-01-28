@@ -455,6 +455,14 @@ footer{
     position: relative;
     float:right;
 }
+@media only screen and (max-width: 968px){
+    .col-30, {
+        width: 50%;
+    }
+    .col-20{
+        width: 45%;
+    }
+ }
 @media only screen and (max-width: 599px) {
     .container, .logo, .meniu, .butonstanga, .butondreapta, .col-20, .col-25, .col-30, .subscribe,.section-6-items, .hireus, .col-50, input[type="email"]{
         width: 100%;
@@ -492,8 +500,3 @@ footer{
         width: 100%;
     } 
 } 
-@media only screen and (max-width: 968px){
-    .col-30{
-        width: 50%;
-    }
- }
