@@ -93,26 +93,61 @@
                 <div class="col-30">
                     <div class="work">
                         <img src="./public/imgs/workstableta.gif">
+                        <div class="overlay">
+                                    <span class="abazoowebsite">ABAZOO WEBSITE</span>
+                                    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    <form>
+                                        <input type="button" class="butonalb roundcorner" id="project" value="SHOW PROJECT">
+                                    </form>
+                            </div>
                     </div>
                 </div>
                 <div class="col-30">
                     <div class="work">
                         <img src="./public/imgs/worksecran.gif">
+                        <div class="overlay">
+                                    <span class="abazoowebsite">ABAZOO WEBSITE</span>
+                                    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    <form>
+                                        <input type="button" class="butonalb roundcorner" id="project" value="SHOW PROJECT">
+                                    </form>
+                            </div>
                     </div>
                 </div>
                 <div class="col-30">
                     <div class="work">
                         <img src="./public/imgs/workslaptop.gif">
+                        <div class="overlay">
+                                    <span class="abazoowebsite">ABAZOO WEBSITE</span>
+                                    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    <form>
+                                        <input type="button" class="butonalb roundcorner" id="project" value="SHOW PROJECT">
+                                    </form>
+                            </div>
                     </div>
                 </div>
                 <div class="col-30">
                     <div class="work">
                         <img src="./public/imgs/workstableta.gif">
+                        <div class="overlay">
+                                    <span class="abazoowebsite">ABAZOO WEBSITE</span>
+                                    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    <form>
+                                        <input type="button" class="butonalb roundcorner" id="project" value="SHOW PROJECT">
+                                    </form>
+                            </div>
                     </div>
                 </div>
                 <div class="col-30">
                     <div class="work">
                         <img src="./public/imgs/worksipad.gif" class=>
+                        <div class="overlay">
+                                    <span class="abazoowebsite">ABAZOO WEBSITE</span>
+                                    <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    <form>
+                                        <input type="button" class="butonalb roundcorner" id="project" value="SHOW PROJECT">
+                                    </form>
+                            </div>
                     </div>
                 </div>
                 <div class="col-30">
