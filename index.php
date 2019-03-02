@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./public/css/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -14,7 +16,37 @@
        <div class="container">
             <header>
                     <div class="logo"> Tanatos<span id="studio">Studio<span></div>
-                    <div class="meniu"> Meniu <i class="fas fa-bars"></i> </div>
+                <nav role="navigation">
+                <div id="menuToggle">
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+                    
+                    <!--
+                    Some spans to act as a hamburger.
+                    
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    <!--
+                    Too bad the menu has to be inside of the button
+                    but hey, it's pure CSS magic.
+                    -->
+                    <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Info</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                    </ul>
+                </div>
+                </nav>
             </header>
             <section>
                     <h1>WE DESIGN <span class="things">THINGS</span></h1>
@@ -169,12 +201,28 @@
     <div class="section-4">
         <div class="container">
             <div class="section-4-items">
-                <div class="slideshow-container">
-                    <div class="imagineangajat">
-                        <img src="./public/imgs/Avatar.gif">
+                <div class="slideshow-container owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="imagineangajat">
+                            <img src="./public/imgs/Avatar.gif">
+                        </div>
+                        <p class="italic">These guys are incredible! I get my project in 10 days and it w</p>
+                        <p>John Smith</p>
                     </div>
-                    <p class="italic">These guys are incredible! I get my project in 10 days and it w</p>
-                    <p>John Smith</p>
+                    <div class="item">
+                        <div class="imagineangajat">
+                            <img src="./public/imgs/Avatar.gif">
+                        </div>
+                        <p class="italic">These guys are incredible! I get my project in 10 days and it w</p>
+                        <p>John Smith2</p>
+                    </div>
+                    <div class="item">
+                        <div class="imagineangajat">
+                            <img src="./public/imgs/Avatar.gif">
+                        </div>
+                        <p class="italic">These guys are incredible! I get my project in 10 days and it w</p>
+                        <p>John Smith3</p>
+                    </div>
             <!-- Full-width images with number and caption text -->
                 </div>
 
@@ -253,6 +301,30 @@
             <p class="designby">DESIGNED BY SYMU.COM</p>
         </div>
     </footer>
+    <script src="./public/js/jquery.min.js"></script>
+<script src="./public/js/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:true,
+            loop:false
+        }
+    }
+})
+</script>
 </body>
 
 </html>
