@@ -29,7 +29,8 @@ body{
 .container{
     width: 100%;
     box-sizing: border-box;
-    margin: auto;
+    padding: 0 20px;
+    margin: 0 auto;
     overflow: hidden;
     max-width: 1140px;
 
@@ -39,10 +40,30 @@ body{
     width: 15%;
     font-size: 18px;
 }
-.meniu{
-    width: 10%;
+.menuhamburger{
+    position: relative;
     float: right;
-    font-size: 12px;
+}
+#menu{
+    position: fixed;
+    background-color:rgba(69, 75, 83, 0.86);
+    color: black;
+    height: 100vh;
+    width: 0%;
+    right: 0;
+    top: 0;
+    transition: 0.5s;
+    overflow:hidden;
+}
+#menu>ul{
+    list-style: none;
+}
+.active-menu{
+    width: 30% !important;
+}
+#close-button{
+    position: absolute;
+    right: 0;
 }
 #studio{
     color: #f7600e;
@@ -272,7 +293,7 @@ section>a{
     text-align: center;
     color: white;
     box-sizing: border-box;
-    padding: 50px 25px;
+    padding: 20% 5%;
     border-radius: 10px;
     
   }
@@ -283,8 +304,8 @@ section>a{
   }
 .overlay>p{
     font-size: 11px;
-    margin-bottom: 30px;
-
+    /* margin-bottom: 30px; */
+    padding: 5% 0 15% 0;
 }
   
 .butonalb{
@@ -292,7 +313,7 @@ section>a{
     border: none;
     background-color: white;
     color: #f7600e;
-    padding: 10px;
+    padding: 4%;
 } 
 .show{
     display: table;
@@ -358,7 +379,7 @@ section>a{
 
 .angajatimagine>img{
     position: relative;
-    left: -25px;
+    /* left: -25px; */
     
 }
 .angajat{
@@ -471,16 +492,44 @@ footer{
     position: relative;
     float:right;
 }
+
+a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+
+.imagineangajat>img{
+    max-width: 100px;
+    margin: 0 auto;
+}
 @media only screen and (max-width: 968px){
     .col-30 {
-        width: 50%;
+        width: 48%;
+        margin: 0 1%;
     }
     .col-20{
         width: 45%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .servicii{
+        padding-bottom: 40px;
+    }
+    .works{
+        padding:100px 0 50px 0;
     }
     .col-25{
         width: 48%;
+        padding-bottom: 7%;
     }
+    .hireus{
+        padding:0 !important;
+    }
+
  }
 @media only screen and (max-width: 599px) {
     .container, .logo, .meniu, .butonstanga, .butondreapta, .col-20, .col-25, .col-30, .subscribe,.section-6-items, .hireus, .col-50, input[type="email"]{
@@ -502,9 +551,7 @@ footer{
     .seealso{
         display: hidden;
     }
-    .container{
-        padding: 1%;
-    }
+
     .myImage{
         display: block;
         margin: auto;
@@ -517,152 +564,18 @@ footer{
     }
     .work>img {
         width: 100%;
-    } 
+    }
+    .elementeformular{
+        margin-top:45px;
+    }
 } 
-
-
-a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
+@media only screen and (min-width: 430px) and (max-width: 599px){
+    .abazoowebsite{
+        font-size: 28px;
+    }
+    .overlay>p{
+        font-size: 20px;
+    }
 }
 
-a:hover
-{
-  color: tomato;
-}
 
-#menuToggle
-{
-  display: block;
-  position: relative;
-  /* top: 50px; */
-  /* left: 50px; */
-  
-  z-index: 1;
-  float: right;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: #cdcdcd;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -50px 0 0 0px;
-  padding: 50px;
-  right: 0px;
-  /* padding-top: 125px; */
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-.imagineangajat>img{
-    max-width: 100px;
-    margin: 0 auto;
-}

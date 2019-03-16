@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta charset = "UTF-8">
-    <meta name = "viewpoint" content = "width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tutorial HTML CSS</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet"> 
@@ -18,33 +18,17 @@
                     <div class="logo"> Tanatos<span id="studio">Studio<span></div>
                 <nav role="navigation">
                 <div id="menuToggle">
-                    <!--
-                    A fake / hidden checkbox is used as click reciever,
-                    so you can use the :checked selector on it.
-                    -->
-                    <input type="checkbox" />
-                    
-                    <!--
-                    Some spans to act as a hamburger.
-                    
-                    They are acting like a real hamburger,
-                    not that McDonalds stuff.
-                    -->
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    
-                    <!--
-                    Too bad the menu has to be inside of the button
-                    but hey, it's pure CSS magic.
-                    -->
-                    <ul id="menu">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Info</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-                    </ul>
+                    <span class="menuhamburger" id="open-button"> <i class="fas fa-bars"></i></span>
+                    <div id="menu">
+                        <span id="close-button"><i class="fas fa-times"></i></span>
+                        <ul>
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>About</li></a>
+                        <a href="#"><li>Info</li></a>
+                        <a href="#"><li>Contact</li></a>
+                        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                        </ul>
+                    </div>
                 </div>
                 </nav>
             </header>
@@ -124,7 +108,7 @@
             </div>
                 <div class="col-30">
                     <div class="work">
-                        <img src="./public/imgs/workstableta.gif">
+                        <img src="./public/imgs/workstableta.gif" class="imaginefundal">
                         <div class="overlay">
                                     <span class="abazoowebsite">ABAZOO WEBSITE</span>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
@@ -136,7 +120,7 @@
                 </div>
                 <div class="col-30">
                     <div class="work">
-                        <img src="./public/imgs/worksecran.gif">
+                        <img src="./public/imgs/worksecran.gif" class="imaginefundal">
                         <div class="overlay">
                                     <span class="abazoowebsite">ABAZOO WEBSITE</span>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
@@ -148,7 +132,7 @@
                 </div>
                 <div class="col-30">
                     <div class="work">
-                        <img src="./public/imgs/workslaptop.gif">
+                        <img src="./public/imgs/workslaptop.gif" class="imaginefundal">
                         <div class="overlay">
                                     <span class="abazoowebsite">ABAZOO WEBSITE</span>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
@@ -160,7 +144,7 @@
                 </div>
                 <div class="col-30">
                     <div class="work">
-                        <img src="./public/imgs/workstableta.gif">
+                        <img src="./public/imgs/workstableta.gif" class="imaginefundal" >
                         <div class="overlay">
                                     <span class="abazoowebsite">ABAZOO WEBSITE</span>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
@@ -172,7 +156,7 @@
                 </div>
                 <div class="col-30">
                     <div class="work">
-                        <img src="./public/imgs/worksipad.gif" class=>
+                        <img src="./public/imgs/worksipad.gif" class="imaginefundal">
                         <div class="overlay">
                                     <span class="abazoowebsite">ABAZOO WEBSITE</span>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
@@ -324,6 +308,14 @@
         }
     }
 })
+  $('#open-button').on('click', function(){
+    $('#menu').addClass('active-menu');
+    $('.menuhamburger').hide();
+  })
+  $('#close-button').on('click', function(){
+    $('#menu').removeClass('active-menu');
+    $('.menuhamburger').show();
+  })
 </script>
 </body>
 
