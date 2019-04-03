@@ -22,11 +22,11 @@
                     <div id="menu">
                         <span id="close-button"><i class="fas fa-times"></i></span>
                         <ul>
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Info</li></a>
-                        <a href="#"><li>Contact</li></a>
-                        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Info</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="https://erikterwan.com/" target="_blank">Show me more</a></li>
                         </ul>
                     </div>
                 </div>
