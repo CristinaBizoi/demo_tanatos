@@ -3,12 +3,13 @@
 <meta charset = "UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tutorial HTML CSS</title>
+    <title>Tanatos</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./public/css/owl.theme.default.min.css">
+    <link rel="icon" type="image/png" href="./public/imgs/logo.png">
 </head>
 
 <body>
