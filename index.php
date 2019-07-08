@@ -282,8 +282,8 @@
     </div>
     <footer>
         <div class="container">
-            <p class="copyright">© 2015 COPYRIGHT DESIGN STUDIO</p>
-            <p class="designby">DESIGNED BY SYMU.COM</p>
+            <p class="copyright"> Developed by <a href="https://cristinabizoi.ro"><b>Cristina Bizoi</b></a> © 2019 </p>
+            <p class="designby"> Design by <a href="https://symu.co/"> Symu.com</a></p>
         </div>
     </footer>
     <script src="./public/js/jquery.min.js"></script>

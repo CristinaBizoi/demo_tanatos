@@ -6,6 +6,7 @@
 p{
     margin: 0;
     padding: 0;
+    font-size: 15px;
 }
 a{
     text-decoration: none;
@@ -419,10 +420,7 @@ section>a{
     -webkit-filter: grayscale(0%);
     text-align: center;
 }
-.angajat:hover .angajatimagine img{
-    /* -webkit-transform: scale(1.1);
-	transform: scale(1.1); */
-}
+
 .angajat:hover .angajatimagine img::after{
     content:"";
     background-color: orange;
@@ -452,7 +450,7 @@ section>a{
     color: white;
 }
 .descriere{
-    font-size: 12px;
+    font-size: 14px;
 }
 .elementeformular{
     margin-top: 95px;
@@ -507,6 +505,9 @@ footer{
     text-align: right;
     position: relative;
     float:right;
+}
+.designby>a , .copyright>a{
+    color:white;
 }
 
 a
