@@ -1,2 +1,6 @@
-# demo_tanatos
-HTML5, CSS3, Responsive design
+# Tanatos
+
+Responsive website using HTML, CSS and jQuery. Based on a PSD template from symu.co
+
+New fetures: jQuery menu, owl carousel for testimonials section
+
