@@ -27,7 +27,6 @@
                             <li><a href="#">About</a></li>
                             <li><a href="#">Info</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="https://erikterwan.com/" target="_blank">Show me more</a></li>
                         </ul>
                     </div>
                 </div>
